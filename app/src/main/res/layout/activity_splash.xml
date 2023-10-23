@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fond d'écran avec une image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/hhhhhhh"
+        android:scaleType="centerCrop" />
+
+    <!-- Animation étoiles -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+    <!-- Titre en haut de l'écran -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Bienvenue dans notre espace "
+        android:textSize="24sp"
+        android:textColor="#9C27B0"
+
+    android:textStyle="italic" />
+
+
+    <!-- Boutons -->
+    <Button
+        android:id="@+id/addEtudiantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Ajouter un étudiant" />
+
+    <Button
+        android:id="@+id/studentListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addEtudiantButton"
+        android:layout_centerInParent="true"
+        android:text="Consulter la liste des étudiants" />
+</RelativeLayout>

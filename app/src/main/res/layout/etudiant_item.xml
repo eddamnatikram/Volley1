@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="0dp">
+
+        <TableRow
+            android:background="@color/design_default_color_secondary">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Prénom"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ville"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sexe"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/nomTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/prenomTextView"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/villeTextView"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sexeTextView"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+        </TableRow>
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:onClick="onDeleteButtonClick" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:layout_toStartOf="@id/deleteButton"
+            android:layout_marginEnd="8dp"
+            android:onClick="onEditButtonClick" />
+
+    </TableLayout>
+</RelativeLayout>
